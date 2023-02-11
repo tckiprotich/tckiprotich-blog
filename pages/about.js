@@ -17,8 +17,7 @@ export default function About({ authors, siteconfig }) {
           <p className="text-lg">I’m Collins , C#(ASP.NET), node js Developer and designer adept at contributing to highly collaborative work environment, finding solutions and determining customer satisfaction..</p>
         </div>
 
-        <div className="grid grid-cols-1
-         gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
+        <div className="grid grid-cols-2 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
           {authors.slice(0, 3).map(author => {
             const { width, height, ...imgprops } = GetImage(
               author?.image
