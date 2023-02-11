@@ -3,7 +3,7 @@ export default {
   type: "document",
   title: "Site Settings",
   __experimental_actions: [
-    /* "create", "delete", */ "update",
+     "create", "delete",  "update",
     "publish"
   ],
   fieldsets: [
@@ -101,13 +101,14 @@ export default {
     },
 
     {
-      name: "phone",
+      name: "0796250508",
       type: "string",
       title: "Support Phone"
     },
 
     {
-      name: "w3ckey",
+      access_key:"51674813-6cf9-4627-87f5-32893557e4d8",
+      name: "51674813-6cf9-4627-87f5-32893557e4d8",
       type: "string",
       title: "Web3Forms Access Key",
       description:

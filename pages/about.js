@@ -5,21 +5,60 @@ import { getClient } from "@lib/sanity";
 import GetImage from "@utils/getImage";
 import Image from "next/image";
 import Link from "next/link";
+import photo from "../public/img/photo.jpg";
 
+
+const myloader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`
+}
 export default function About({ authors, siteconfig }) {
   return (
     <Layout {...siteconfig}>
       <Container>
-        <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
+        <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white  ">
           About
         </h1>
+        <div className="mx-auto prose text-center dark:prose-invert mt-14">
+        <Image className="w-24 h-24 rounded-full mx-auto" 
+        loader={myloader}
+        src={photo} alt="" width="200" height="200"/>
+        </div>
+
         <div className="text-center">
-          <p className="text-lg">I’m Collins , C#(ASP.NET), node js Developer and designer adept at contributing to highly collaborative work environment, finding solutions and determining customer satisfaction..</p>
+          {/* <p className="text-lg">I’m Collins , C#(ASP.NET), node js Developer and designer adept at contributing to highly collaborative work environment, finding solutions and determining customer satisfaction..</p> */}
 
           <p className="text-lg"></p>
         </div>
 
-        <div className="grid grid-cols-2 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
+        <figure className="mdbg-slate-100 rounded-xl p-8 dark:bg-slate-800">
+  {/* <img className="w-24 h-24 rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512"/> */}
+  <div className="pt-6 text-center space-y-4      dark:bg-zinc-900  ">
+    {/* <blockquote> */}
+    <div className="mx-auto prose text-center dark:prose-invert mt-14">
+          <p>
+          With a strong background in C# (ASP.NET) and node.js, I am able to bring my expertise and technical skills to any project. I am highly collaborative and excels in working with cross-functional teams to ensure that all projects are completed on time and to the highest standard.
+          I  Designed and developed web applications across multiple APIs, third-party integrations and databases.
+          </p>
+          <p>
+          I am also a multidisciplinary designer with a curious mind, I enjoy to meet new people and understand how they are solving problems as a chance to improve myself as a professional and put things in practice when I’m creating my solutions.
+          </p>
+          <p>
+            <Link href="/contact">Get in touch</Link>
+          </p>
+        </div>
+    {/* </blockquote> */}
+    <figcaption className="font-medium">
+      <div className="text-sky-500 dark:text-sky-400">
+      Collins Tonui
+      </div>
+      <div className="text-slate-700 dark:text-slate-500">
+        Software Engineer, Kenya
+      </div>
+    </figcaption>
+  </div>
+</figure>
+
+        {/* <div className="grid grid-cols-2 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
           {authors.slice(0, 3).map(author => {
             const { width, height, ...imgprops } = GetImage(
               author?.image
@@ -38,19 +77,9 @@ export default function About({ authors, siteconfig }) {
               </div>
             );
           })}
-        </div>
+        </div> */}
 
-        <div className="mx-auto prose text-center dark:prose-invert mt-14">
-          <p>
-          With a strong background in C# (ASP.NET) and node.js, I am able to bring my expertise and technical skills to any project. I am highly collaborative and excels in working with cross-functional teams to ensure that all projects are completed on time and to the highest standard.
-          </p>
-          <p>
-          I am also a multidisciplinary designer with a curious mind, I enjoy to meet new people and understand how they are solving problems as a chance to improve myself as a professional and put things in practice when I’m creating my solutions.
-          </p>
-          <p>
-            <Link href="/contact">Get in touch</Link>
-          </p>
-        </div>
+        
       </Container>
     </Layout>
   );
