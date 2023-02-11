@@ -15,6 +15,8 @@ export default function About({ authors, siteconfig }) {
         </h1>
         <div className="text-center">
           <p className="text-lg">I’m Collins , C#(ASP.NET), node js Developer and designer adept at contributing to highly collaborative work environment, finding solutions and determining customer satisfaction..</p>
+
+          <p className="text-lg"></p>
         </div>
 
         <div className="grid grid-cols-2 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
@@ -40,16 +42,10 @@ export default function About({ authors, siteconfig }) {
 
         <div className="mx-auto prose text-center dark:prose-invert mt-14">
           <p>
-            We provide real-time connectivity to enable software
-            providers and financial institutions to build integrated
-            products for their small business customers.
+          With a strong background in C# (ASP.NET) and node.js, I am able to bring my expertise and technical skills to any project. I am highly collaborative and excels in working with cross-functional teams to ensure that all projects are completed on time and to the highest standard.
           </p>
           <p>
-            Our API infrastructure is leveraged by clients ranging
-            from lenders to corporate card providers and business
-            forecasting tools, with use cases including automatic
-            reconciliation, business dashboarding, and loan
-            decisioning.
+          I am also a multidisciplinary designer with a curious mind, I enjoy to meet new people and understand how they are solving problems as a chance to improve myself as a professional and put things in practice when I’m creating my solutions.
           </p>
           <p>
             <Link href="/contact">Get in touch</Link>
