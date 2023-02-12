@@ -37,7 +37,7 @@ export default function portfolio({siteconfig})
             
             {/* Talented backend developer adept at contributing to highly collaborative work environment, finding solutions and determining customer satisfaction. Designed and developed web applications across multiple APIs, third-party integrations and databases.  proficient  with expertise in both Node.js and ASP.NET,  adept at contributing to highly collaborative work environment */}
           </div>
-          <div className="mt-6  mb-15  flex gap-6">
+          <div className="mt-6  mb-10  flex gap-6">
             <a
               className="group -m-1 p-1"
               aria-label="Follow on Twitter"
