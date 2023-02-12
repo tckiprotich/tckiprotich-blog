@@ -101,7 +101,7 @@ export default {
     },
 
     {
-      name: "phone number",
+      name: "phonenumber",
       type: "string",
       title: "Support Phone"
     },
