@@ -68,7 +68,7 @@ const Backlink = () => {
       href="https://github.com/tckiprotich"
       target="_blank"
       rel="noopener"
-      className="fixed flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center right-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300">
+      className="fixed flex px-3 py-1 space-x-2 text-sm font-semibold text-gray-900 bg-white border border-gray-300 rounded shadow-sm place-items-center left-5 bottom-5 dark:bg-trueGray-900 dark:border-trueGray-700 dark:text-trueGray-300">
       <svg
         width="20"
         height="20"
@@ -90,5 +90,6 @@ const Backlink = () => {
 
       <span> Visit My Github page ↗</span>
     </a>
+    
   );
 };

@@ -9,11 +9,11 @@ import { myLoader } from "@utils/all";
 export default function Navbar(props) {
   const leftmenu = [
     {
-      label: "Portfolio",
-      href: "/portfolio"
+      label: "Blogs",
+      href: "/blog"
     },
     {
-      label: "Blogs",
+      label: "Home",
       href: "/"
     },
     
@@ -47,11 +47,11 @@ export default function Navbar(props) {
         <Disclosure>
           {({ open }) => (
             <>
-              <div className="flex flex-wrap justify-between md:gap-10 md:flex-nowrap">
-                <div className="flex-col items-center justify-start order-1 hidden w-full md:flex md:flex-row md:justify-end md:w-auto md:order-none md:flex-1">
+              <div className="flex  flex-wrap justify-between md:gap-10 md:flex-nowrap">
+                <div className="flex-col  items-center justify-start order-1 hidden w-full md:flex md:flex-row md:justify-end md:w-auto md:order-none md:flex-1">
                   {leftmenu.map((item, index) => (
                     <Link href={item.href} key={index}>
-                      <a className="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500">
+                      <a className="px-5 text-2xl py-2 text-sm font-medium text-gray-100 dark:text-gray-400 hover:text-blue-500">
                         {item.label}
                       </a>
                     </Link>
@@ -74,7 +74,7 @@ export default function Navbar(props) {
                       )}
                     </a>
                   </Link>
-                  <Link href="/portfolio">
+                  <Link href="/">
                     <a className="hidden w-28 dark:block">
                       {props.logoalt ? (
                         <Image
@@ -123,7 +123,7 @@ export default function Navbar(props) {
                         rel={item.external ? "noopener" : ""}>
                         <span> {item.label}</span>
                         {item.badge && (
-                          <span className="bg-blue-100 text-blue-600 text-xs font-semibold ml-2 px-2 py-0.5 rounded dark:bg-cyan-200 dark:text-blue-800 ">
+                          <span className="bg-blue-100 text-xl  text-blue-600 text-xs font-semibold ml-2 px-2 py-0.5 rounded dark:bg-cyan-200 dark:text-blue-800 ">
                             {item.badge}
                           </span>
                         )}
