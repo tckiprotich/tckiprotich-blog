@@ -1,6 +1,7 @@
 // Works Data
 import works from "./Data/Data.js";
 import Image from "next/image.js";
+import Link from "next/link";
 // import layout from "@components/layout";
 // React Icons
 import { HiArrowNarrowRight } from "@heroicons/react/outline";
@@ -16,10 +17,10 @@ const Works = ({siteconfig}) => {
       <layout>
         <div className="max-w-6xl m-auto pt-20 pt-8 px-2 sm:pt-5" id="projects">
             {/* <h1 className="text-4xl text-teal-500 font-bold sm:text-5xl pb-10">Featured Works</h1> */}
-            <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
+            <h1 className="mb-10 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
           Check out my works
         </h1>
-            <div className="grid grid-cols-1 gap-0 lg:grid-cols-3 sm:grid-cols-2 sm:gap-4">
+            <div className="grid py-10 grid-cols-1 gap-0 lg:grid-cols-3 sm:grid-cols-2 sm:gap-4">
                 {
                     works ?
                         works.map((work, index) =>
@@ -52,10 +53,13 @@ const Works = ({siteconfig}) => {
                         : null
                 }
             </div>
-            <button className=" mx-auto py-15 flex justify-between items-center gap-1  bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-               <span className="px-5">View All my projects  ↗</span> 
+            <Link href="/blog">
+            <button className=" mx-auto  py-15 flex justify-between items-center gap-1  bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+            
+               <span className="px-5">View Blogs  ↗</span> 
                 
             </button>
+            </Link>
         </div>
         </ layout>
     );
