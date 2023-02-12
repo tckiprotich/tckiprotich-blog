@@ -30,8 +30,7 @@ export default function About({ authors, siteconfig }) {
         </div>
 
         <div className="text-center">
-          {/* <p className="text-lg">I’m Collins , C#(ASP.NET), node js Developer and designer adept at contributing to highly collaborative work environment, finding solutions and determining customer satisfaction..</p> */}
-
+         
           <p className="text-lg"></p>
         </div>
 
