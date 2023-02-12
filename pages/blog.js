@@ -32,7 +32,7 @@ export default function Post(props) {
       {posts && siteConfig && (
         <Layout {...siteConfig}>
           <NextSeo
-            title={`${siteConfig?.title}`}
+            title="Collins Tonui | Home"
             description={siteConfig?.description || ""}
             canonical={siteConfig?.url}
             openGraph={{

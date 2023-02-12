@@ -4,6 +4,7 @@ import { authorsquery, configQuery } from "@lib/groq";
 import { getClient } from "@lib/sanity";
 import GetImage from "@utils/getImage";
 import Image from "next/image";
+import Head from "next/head"
 import Link from "next/link";
 import photo from "../public/img/photo.jpg";
 
@@ -14,6 +15,10 @@ const myloader = ({ src, width, quality }) => {
 export default function About({ authors, siteconfig }) {
   return (
     <Layout {...siteconfig}>
+      <Head>4
+      <title>About Collins</title>
+        </ Head>
+      
       <Container>
         <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white  ">
           About

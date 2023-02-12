@@ -101,14 +101,14 @@ export default {
     },
 
     {
-      name: "0796250508",
+      name: "phone number",
       type: "string",
       title: "Support Phone"
     },
 
     {
       access_key:"51674813-6cf9-4627-87f5-32893557e4d8",
-      name: "51674813-6cf9-4627-87f5-32893557e4d8",
+      name: "webform",
       type: "string",
       title: "Web3Forms Access Key",
       description:
