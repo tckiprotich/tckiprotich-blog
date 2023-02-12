@@ -23,7 +23,7 @@ export default function Footer(props) {
             href="https://web3templates.com/?ref=stablo-template"
             rel="noopener"
             target="_blank">
-            Web3Templates
+            
           </a>
         </span>
         <span>&middot;</span>
@@ -88,7 +88,7 @@ const Backlink = () => {
         />
       </svg>
 
-      <span> Purchase Pro ↗</span>
+      <span> Visit My Github page ↗</span>
     </a>
   );
 };

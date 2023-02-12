@@ -30,9 +30,9 @@ export default function About({ authors, siteconfig }) {
           <p className="text-lg"></p>
         </div>
 
-        <figure className="mdbg-slate-100 rounded-xl p-8 dark:bg-slate-800">
+        <figure className="mdbg-slate-100 rounded-xl p-8">
   {/* <img className="w-24 h-24 rounded-full mx-auto" src="/sarah-dayan.jpg" alt="" width="384" height="512"/> */}
-  <div className="pt-6 text-center space-y-4      dark:bg-zinc-900  ">
+  <div className="pt-6 text-center space-y-4">
     {/* <blockquote> */}
     <div className="mx-auto prose text-center dark:prose-invert mt-14">
           <p>
@@ -42,13 +42,14 @@ export default function About({ authors, siteconfig }) {
           <p>
           I am also a multidisciplinary designer with a curious mind, I enjoy to meet new people and understand how they are solving problems as a chance to improve myself as a professional and put things in practice when I’m creating my solutions.
           </p>
-          <p>
-            <Link href="/contact">Get in touch</Link>
-          </p>
+          <button class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+          <Link href="/contact">Get in touch</Link>
+          </button>
+          
         </div>
     {/* </blockquote> */}
     <figcaption className="font-medium">
-      <div className="text-sky-500 dark:text-sky-400">
+      <div className="text-sky-500 pt-10 dark:text-sky-400">
       Collins Tonui
       </div>
       <div className="text-slate-700 dark:text-slate-500">

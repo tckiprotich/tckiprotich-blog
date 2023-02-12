@@ -9,33 +9,32 @@ import { myLoader } from "@utils/all";
 export default function Navbar(props) {
   const leftmenu = [
     {
-      label: "Home",
+      label: "Portfolio",
+      href: "/portfolio"
+    },
+    {
+      label: "Blogs",
       href: "/"
     },
+    
+    
     {
       label: "About",
       href: "/about"
     },
-    {
-      label: "Contact",
-      href: "/contact"
-    }
+    
   ];
 
   const rightmenu = [
     {
-      label: "Archive",
-      href: "/archive"
+      label: "Contact",
+      href: "/contact"
     },
+    
+    
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
-    },
-    {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+      label: "Check Github",
+      href: "https://github.com/tckiprotich",
       external: true
     }
   ];
@@ -70,12 +69,12 @@ export default function Navbar(props) {
                         />
                       ) : (
                         <span className="block text-center">
-                          Stablo
+                          Tckiprotich
                         </span>
                       )}
                     </a>
                   </Link>
-                  <Link href="/">
+                  <Link href="/portfolio">
                     <a className="hidden w-28 dark:block">
                       {props.logoalt ? (
                         <Image
@@ -85,8 +84,8 @@ export default function Navbar(props) {
                           priority={true}
                         />
                       ) : (
-                        <span className="block text-center">
-                          Stablo
+                        <span className="block text-xl bold text-center">
+                          Tckiprotich
                         </span>
                       )}
                     </a>
