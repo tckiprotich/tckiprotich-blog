@@ -36,6 +36,23 @@ export default {
       to: { type: "author" }
     },
     {
+      name: "body",
+      title: "Body",
+      type: "array",
+      of: [
+        { type: "block" },
+        { 
+          type: "code",
+          options: {
+            languageTitles: {
+              javascript: "JavaScript"
+              // add other languages as desired
+            }
+          }
+        }
+      ]
+    },
+    {
       name: "mainImage",
       title: "Main image",
       type: "image",
