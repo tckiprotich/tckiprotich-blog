@@ -35,7 +35,6 @@ export default {
       type: "reference",
       to: { type: "author" }
     },
-    ,
     {
       name: "mainImage",
       title: "Main image",
