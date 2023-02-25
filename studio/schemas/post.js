@@ -82,17 +82,7 @@ export default {
     {
       name: "body",
       title: "Body",
-      type: "array"
-      of: [
-        {
-          type: "block",
-          styles: [{ title: "Normal", value: "normal" }],
-          lists: [],
-          marks: {
-            decorators: [{ title: "Code", value: "code" }]
-          }
-        }
-      ]
+      type: "blockContent"
     }
   ],
 
